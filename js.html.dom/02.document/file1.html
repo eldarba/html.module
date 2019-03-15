@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>DOM - the document object</title>
+</head>
+<body style="background-color: ">
+	<h1>DOM - the document object</h1>
+	<h3>the document object represents the current web page</h3>
+	<script>
+		var input;
+		
+		// changing the page background color
+		if(confirm("do you want to change the background color?")) {
+			input = prompt("enter new background color", "pink");
+			//document.body.bgColor = input;
+			document.body.style.backgroundColor = input;
+		}
+
+		// changing the page font color
+		if(confirm("do you want to change the font color?")) {
+			input = prompt("enter new font color", "red");
+			//document.fgColor = input;
+			document.body.style.color = input;
+		}
+		
+		// changing the page title
+		if(confirm("do you want to change the document title?")) {
+			input = prompt("enter new title", "the new title");
+			document.title = input;
+		}
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>File 2</title>
+</head>
+<body>
+	<h1>File 2</h1>
+	<div id="div1"></div>
+	<script>
+		var element = document.getElementById("div1");
+		var content = "";
+		for (i = 1; i <= 25; i++) {
+			content += i + ") Hello DOM World!<br>";
+		}
+		element.innerHTML = content;
+	</script>
+</body>
+</html>

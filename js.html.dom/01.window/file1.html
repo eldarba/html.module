@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>DOM - the window object</title>
+</head>
+<body>
+	<h1>DOM - the window object</h1>
+	<h3>the window object represents the browser</h3>
+	window.location
+	<div id="div1"></div>
+	<hr>
+	<script>
+		console.log(window);
+		document.getElementById("div1").innerHTML = window.location;
+		if(confirm("do you wand yo navigate to another page?")) {
+			var url = prompt("enter url", "http://www.google.com")
+			if(url != null) {
+				window.location = url;
+			}
+		}
+	</script>
+</body>
+</html>

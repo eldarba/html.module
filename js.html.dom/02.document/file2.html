@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>DOM - the document object</title>
+</head>
+<body style="background-color:">
+	<h1>DOM - the document object</h1>
+	<h3>the document object represents the current web page</h3>
+	<h3>in this demo some functions of the document object are used</h3>
+	<div id="div1">below are some fields<br>
+		<input id="tf1" name="val"><br>
+		<input id="tf2"	name="val"><br>
+		<input id="tf3" name="val"><br>
+	</div>
+	<button onclick="clearFields()">clear fields</button><br>
+	<button onclick="changeH3Tags()">change h3 tags</button><br>
+	<script>
+		var input;
+
+		// getElementById
+		// changing the input text
+		if (confirm("do you want to change the content of first input?")) {
+			input = prompt("enter some text", "some text");
+			document.getElementById("tf1").value = input;
+		}
+
+		// getElementsByName
+		// clear all input fields
+		function clearFields() {
+			if (confirm("do you want to clear the content of all input fields?")) {
+				var fields = document.getElementsByName("val");
+				for(i = 0; i < fields.length; i++) {
+					fields[i].value = null;
+				}
+			}
+		}
+
+		// getElementsByTagName
+		// clear all h3 title tags
+		function changeH3Tags() {
+			if (confirm("do you want to change all h3 tags in the page?")) {
+				input = prompt("enter some text", "Title 3 new Text");
+				var arr = document.getElementsByTagName("h3");
+				for(i = 0; i < arr.length; i++) {
+					arr[i].innerHTML = input;
+				}
+			}
+		}
+
+	</script>
+</body>
+</html>

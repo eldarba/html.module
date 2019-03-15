@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>DOM - the document object</title>
+</head>
+<body style="background-color:">
+	<h1>DOM - the document object</h1>
+	<h3>the document object represents the current web page</h3>
+	<h3>in this demo some functions of the document object are used</h3>
+	=== start of div1<br>
+	<div id="div1">
+		<input id="tf1" name="val"><br>
+		<input id="tf2"	name="val"><br>
+		<input id="tf3" name="val"><br>
+		below are some fields<br>
+	</div>
+	=== end of div1<br>
+	<button onclick="changeInnerText()">change InnerText</button><br>
+	<button onclick="changeInnerHTML()">change InnerHTML</button><br>
+	<script>
+		// innerText
+		function changeInnerText() {
+			document.getElementById("div1").innerText = "<h4>NEW TEXT</h4>";
+		}
+		
+		// InnerHTML
+		function changeInnerHTML() {
+			document.getElementById("div1").innerHTML = "<h4>NEW TEXT</h4>";
+		}
+	</script>
+</body>
+</html>

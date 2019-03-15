@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>DOM - the document object</h1>
+	<button onclick="fill()">fill the div elements below</button>
+	<div></div>
+	<div></div>
+	<div></div>
+	<script>
+		/*
+		NodeList
+		0: text
+		1: h1
+		2: text
+		3: button
+		4: text
+		5: div
+		6: text
+		7: div
+		8: text
+		9: div
+		10: text
+		11: script
+		12: text
+		length: 13
+		 */
+		function fill() {
+			var nodes = document.body.childNodes;
+			nodes[5].innerHTML = Math.floor(Math.random() * 6) + 1;
+			nodes[7].innerHTML = Math.floor(Math.random() * 6) + 1;
+			nodes[9].innerHTML = Math.floor(Math.random() * 6) + 1;
+		}
+	</script>
+</body>
+</html>
