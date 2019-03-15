@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>using the document object</title>
+<style type="text/css">
+button {
+	margin: 5px;
+	width: 150px;
+}
+</style>
+</head>
+<body>
+	<button onclick="changeFgColorRed()">change font to red</button>
+	<br>
+	<button onclick="changeFgColorBlue()">change font to blue</button>
+	<br>
+	<button onclick="putInnerText()">Put innerText in div</button>
+	<br>
+	<button onclick="putInnerHTML()">Put innerHTML in div</button>
+	<br>
+	<div id="d1"><h3>Hello</h3><p>this is a paragraph</p></div>
+	<script>
+		// methods of the document DOM object
+		function changeFgColorRed() {
+			window.document.fgColor = "red";
+		}
+		function changeFgColorBlue() {
+			window.document.fgColor = "blue";
+		}
+		function putInnerText() {
+			var text = window.prompt("enter text", "<h1>bla</h1>");
+			document.getElementById("d1").innerText = text;
+		}
+		function putInnerHTML() {
+			var html = window.prompt("enter html", "<h1>bla</h1>");
+			document.getElementById("d1").innerHTML = html;
+		}
+
+		var e = document.getElementById("d1");
+		console.log("innerHTML of the div element");
+		console.log(e.innerHTML);
+		console.log("innerText of the div element");
+		console.log(e.innerText);
+		
+		var c = document.getElementById("d1").childNodes;
+		console.log(c);
+	</script>
+</body>
+</html>

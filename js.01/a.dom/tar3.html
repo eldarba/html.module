@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>Insert title here</title>
+<style type="text/css">
+input {
+	margin: 5px;
+	width: 150px;
+}
+</style>
+</head>
+<body onunload="showMessage()">
+	<img alt="html image" src="pic1.jpg" onmouseover="count()"><br>
+	<a href="tar2.html">go to targil 2</a>
+
+	<script>
+		var counter = 0;
+
+		function count() {
+			counter++;
+			console.log(counter);
+		}
+		function showMessage() {
+			alert("number of times over image: " + counter)
+		}
+	</script>
+</body>
+</html>

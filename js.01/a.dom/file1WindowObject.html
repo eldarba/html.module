@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>using the window object</title>
+<style type="text/css">
+button {
+	margin: 5px;
+	width: 150px;
+}
+</style>
+</head>
+<body bgcolor="pink">
+	<button onclick="changeToRed()">change to red</button>
+	<br>
+	<button onclick="changeToGreen()">change to green</button>
+	<br>
+	<button onclick="changeToBlue()">change to blue</button>
+	<br>
+	<button onclick="toGoogle()">go to google</button>
+	<br>
+	<button onclick="showLocation()">show page url</button>
+	<br>
+	<button onclick="pickColor()">choose a color</button>
+	<br>
+	<script>
+		// attributes of the document DOM object
+		function changeToRed() {
+			window.document.body.bgColor = "red";
+		}
+		function changeToGreen() {
+			window.document.body.bgColor = "green";
+		}
+		function changeToBlue() {
+			window.document.body.bgColor = "blue";
+		}
+		// methods of the window DOM object
+		function toGoogle() {
+			if (window.confirm("are you sure?")) {
+				window.location = "http://www.google.com";
+			}
+		}
+		function showLocation() {
+			window.alert(window.location);
+		}
+		function pickColor() {
+			var color = window.prompt("enter color", "white");
+			window.document.body.bgColor = color;
+
+		}
+	</script>
+</body>
+</html>

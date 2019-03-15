@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>Insert title here</title>
+<style type="text/css">
+input {
+	margin: 10px;
+	width: 150px;
+}
+</style>
+</head>
+<body>
+	<input type="button" value="make window smaller" onclick="makeSmall()">
+	<br>
+	<input type="button" value="make window biger" onclick="makeBig()">
+	<br>
+	<input type="button" value="move right" onclick="moveRight()">
+	<br>
+	<input type="button" value="move left" onclick="moveLeft()">
+	<br>
+
+	<script>
+		window.status = "Welcome to my site!";
+		function makeSmall() {
+			window.resizeTo(300, 300);
+		}
+
+		function makeBig() {
+			window.resizeTo(800, 800);
+		}
+		function moveRight() {
+			window.moveTo(600, 100);
+		}
+		function moveLeft() {
+			window.moveTo(100, 100);
+		}
+	</script>
+</body>
+</html>

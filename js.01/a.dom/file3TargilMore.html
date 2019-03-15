@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Exercise</h1>
+	<h3>Links</h3>
+	<div id="d1">
+		<a href="http://www.google.co.il">To google site</a>
+		<br>
+		<a href="http://www.walla.co.il">To walla site</a>
+		<br>
+		<img alt="pic1" src="pic1.jpg">
+		<img alt="pic2" src="pic2.png">
+		<img alt="pic3" src="pic3.jpg">
+	</div>
+
+	<script>
+		var div1Element = document.getElementById("d1");
+		var anchorsArr = div1Element.getElementsByTagName("a");
+		alert(anchorsArr.length);
+	</script>
+</body>
+</html>

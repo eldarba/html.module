@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>Insert title here</title>
+<style type="text/css">
+input {
+	margin: 5px;
+	width: 150px;
+}
+</style>
+</head>
+<body>
+	<input id="tf1" onkeypress="switchColor()" onblur="showTxt()" >
+	<script>
+		function switchColor() {
+			if (tf1.value.length % 2 == 0){
+				tf1.style.color="red";
+			}else{
+				tf1.style.color="green";
+			}
+		}
+		function showTxt(){
+			alert(tf1.value)
+		}
+	</script>
+</body>
+</html>

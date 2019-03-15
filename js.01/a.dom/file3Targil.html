@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Exercise</h1>
+	<h3>Images</h3>
+	<img alt="pic1" src="pic1.jpg">
+	<img alt="pic2" src="pic2.png">
+	<img alt="pic3" src="pic3.jpg">
+	<h3>Links</h3>
+	<a href="http://www.google.co.il">To google site</a>
+	<br>
+	<a href="http://www.walla.co.il">To walla site</a>
+	<br>
+
+	<script>
+		var numOfImages = document.images.length;
+		var numOfLinks = document.links.length;
+		alert("number of images: " + numOfImages);
+		for (var i = 0; i < document.images.length; i++) {
+			alert(document.images[i].src);
+		}
+		alert("number of links: " + numOfLinks);
+		for (var i = 0; i < document.links.length; i++) {
+			alert(document.links[i].href);
+		}
+	</script>
+</body>
+</html>
