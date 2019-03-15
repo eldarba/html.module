@@ -1,0 +1,23 @@
+@charset "windows-1255";
+/*
+this is a comment inside a css file
+*/
+h1 {
+	color: red;
+}
+
+p {
+	color: blue;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+thead {
+	color: green;
+}
+
+tbody {
+	color: purple;
+}

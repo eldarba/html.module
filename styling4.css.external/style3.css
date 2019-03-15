@@ -1,0 +1,36 @@
+@charset "windows-1255";
+
+body {
+	background-color: #d5a39f;
+}
+
+h1 {
+	color: maroon;
+	font-style: italic;
+}
+
+p {
+	color: olive;
+	font-size: large;
+}
+
+table, th, td {
+	border: 1px solid #ff0000;
+}
+
+thead {
+	color: #ff8080;
+}
+
+tbody {
+	color: #804040;
+}
+
+.note{
+	margin:25px 0px 25px 0px;
+	background-color:yellow;
+	color: red;
+	font: bold;
+	text-decoration: underline;
+	font-size: x-large;
+}

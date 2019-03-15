@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>Photo Gallery</title>
+<style type="text/css">
+.div1>img {
+	height: 100px;
+}
+
+.div2>img {
+	height: 150px;
+}
+
+.div3>img {
+	height: 200px;
+}
+
+.div1>img:hover {
+	height: 400px;
+	width: 150px;
+	object-fit: cover;
+	border: 5px solid red;
+}
+.div2>img:hover {
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+	border: 5px solid blue;
+}
+.div3>img:hover {
+	height: 150px;
+	width: 700px;
+	object-fit: cover;
+	border: 5px solid pink;
+}
+
+div, img {
+	padding: 20px;
+}
+</style>
+
+</head>
+<body>
+	<h1>Photo Gallery</h1>
+	<div class="div1">
+		<img alt="puppy1" src="../puppy1.jpg"> <img alt="puppy2"
+			src="../puppy2.jpg"> <img alt="puppy3" src="../puppy3.jpg">
+	</div>
+	<div class="div2">
+		<img alt="puppy1" src="../puppy1.jpg"> <img alt="puppy2"
+			src="../puppy2.jpg"> <img alt="puppy3" src="../puppy3.jpg">
+	</div>
+	<div class="div3">
+		<img alt="puppy1" src="../puppy1.jpg"> <img alt="puppy2"
+			src="../puppy2.jpg"> <img alt="puppy3" src="../puppy3.jpg">
+	</div>
+</body>
+</html>

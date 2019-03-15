@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>My Web site</title>
+<style type="text/css">
+* {
+	box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+	background-color: #F1F1F1;
+	text-align: center;
+	padding: 20px;
+}
+/* Style the top navigation bar */
+.topnav {
+	background: #333;
+	overflow: hidden;
+}
+/* Style the topnav links */
+.topnav a {
+	padding: 14px 16px;
+	display: inline-block;
+	color: #f2f2f2;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+	float: left;
+	padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+	width: 25%;
+}
+/* middle column */
+.column.middle {
+	width: 50%;
+}
+</style>
+</head>
+<body>
+	<div class="header"><h1>Header</h1></div>
+	<div class="topnav">
+		<a href="#">Link</a> <a href="#">Link</a> <a href="#">Link</a>
+	</div>
+	<h2>DESIGN</h2>
+	<p>If you’re a web developer or designer who has lately working on
+		projects for mobile devices, it won’t take too long before you realize
+		that a pixel no longer equals a pixel.</p>
+	<p>You noticed this because you looked up the screen resolution of
+		the new Galaxy S6 and were puzzled as to how it could have a larger
+		resolution than your 1080p widescreen desktop monitor, and yet
+		websites are still perfectly readable and seem to render at the same
+		size as they always have. Something is literally not adding up.</p>
+	<p>For a web developer, this means that with the advent of
+		high-density displays, you can’t count on a device’s screen resolution
+		anymore to tell you how wide a page should be. When Apple pioneered
+		this with their Retina display, they split the concept of pixels into
+		hardware pixels and software pixels. A hardware pixel is an individual
+		dot of light in the display. A software pixel, also called a CSS pixel
+		in the web world, is a unit of measurement.</p>
+	<div>
+		<div class="column side">
+			<h2>Sharper text</h2>
+			<p>You’ll notice that text appears much sharper on a high-density
+				display. The font size is the same relative to the rest of the page,
+				but the text is drawn at the hardware pixel level. So, a font size
+				of 14px will take up 14 CSS pixels but render at 28 hardware pixels.
+				(The enhanced text rendering is handled automatically by the
+				browser—you don’t need to do anything at all to take advantage of
+				this feature.)</p>
+		</div>
+		<div class="column middle">
+			<h2>DESIGN</h2>
+			<p>If you’re a web developer or designer who has lately working
+				on projects for mobile devices, it won’t take too long before you
+				realize that a pixel no longer equals a pixel.</p>
+			<p>You noticed this because you looked up the screen resolution
+				of the new Galaxy S6 and were puzzled as to how it could have a
+				larger resolution than your 1080p widescreen desktop monitor, and
+				yet websites are still perfectly readable and seem to render at the
+				same size as they always have. Something is literally not adding up.</p>
+			<p>For a web developer, this means that with the advent of
+				high-density displays, you can’t count on a device’s screen
+				resolution anymore to tell you how wide a page should be. When Apple
+				pioneered this with their Retina display, they split the concept of
+				pixels into hardware pixels and software pixels. A hardware pixel is
+				an individual dot of light in the display. A software pixel, also
+				called a CSS pixel in the web world, is a unit of measurement.</p>
+		</div>
+		<div class="column side">
+			<h2>Sharper icons</h2>
+			<p>Technically this could fall under “text”, but lately there’s
+				been a movement to use icon fontssuch as FontAwesome to render icons
+				instead of traditional images. The advantages include the ability to
+				specify the color, size and hover effects via CSS so you don’t need
+				separate images for each color variant. Essentially this is a
+				creative and easy way to use vectors in web design that are sharp at
+				any size, and the same high-DPI benefits apply here too. An
+				icon-font icon will be sized with CSS pixels but rendered with
+				hardware pixels.</p>
+		</div>
+	</div>
+</body>
+</html>

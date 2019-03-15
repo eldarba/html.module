@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>nested tags</title>
+<style type="text/css">
+/*there are 4 css select combinators: */
+/*1. descendant selector (space)*/
+form input {
+	color: red;
+}
+/*2. child selector (>)*/
+form>input {
+	background-color: yellow;
+}
+
+/*3. Adjacent Sibling Selector (+)*/
+div+p {
+	color: blue;
+}
+
+/*4. General Sibling Selector (~)*/
+hr ~ p {
+	background-color: pink;
+}
+</style>
+</head>
+<body>
+	<h1>CSS combinators</h1>
+	<!-- Descendant and Child Selector -->
+	<h3>Descendant and Child Selector</h3>
+	<p>input elements that are directly nested in a form element will
+		have yellow background.</p>
+	<p>input elements that are nested (directly or indirectly) in a
+		form element will have red font color.</p>
+	<form action="">
+		<input value="text">
+		<div>
+			<input value="text">
+		</div>
+	</form>
+	<br>
+	<input value="text">
+
+	<!-- Adjacent Sibling Selector -->
+	<h3>Adjacent Sibling Selector</h3>
+	<p>paragraph 1</p>
+	<div>div</div>
+	<p>paragraph 2</p>
+	<p>paragraph 3</p>
+
+	<!-- General Sibling Selector -->
+	<h3>General Sibling Selector</h3>
+	<p>Paragraph 1.</p>
+	<hr>
+	<p>Paragraph 3.</p>
+	<div>div 1</div>
+	<p>Paragraph 4.</p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+@charset "windows-1255";
+
+h1 {
+	color: maroon;
+}
+
+p {
+	color: olive;
+}
+
+table, th, td {
+	border: 2px dotted blue;
+}
+
+thead {
+	color: red;
+}
+
+tbody {
+	color: blue;
+}
