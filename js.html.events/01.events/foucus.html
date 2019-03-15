@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>Insert title here</title>
+</head>
+<body onunload="displayMessage()">
+	<h1>focus and blur events</h1>
+	<h3>the fields change when they get focus</h3>
+	<form action="">
+		id <input name="id" onfocus="getFocus(this)" onblur="getBlured(this)">
+		name <input name="name" onfocus="getFocus(this)" onblur="getBlured(this)">
+		age <input name="," onfocus="getFocus(this)" onblur="getBlured(this)">
+		phone <input name="phone" onfocus="getFocus(this)" onblur="getBlured(this)">
+		<br>
+		<br>
+		<button type="submit">Submit</button>
+	</form>
+	
+	<script>
+		function getFocus(element) {
+			element.style.backgroundColor = "yellow";
+		}
+		function getBlured(element) {
+			element.style.backgroundColor = "white";
+		}
+	</script>
+</body>
+</html>

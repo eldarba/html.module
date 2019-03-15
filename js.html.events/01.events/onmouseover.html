@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>onmouseover event</h1>
+	<h3>put your mouse over the image repeatedly</h3>
+	<img id="img" alt="smiley" src="pic1.jpg" onmouseover="change()">
+
+	<script>
+		var flag = true;
+
+		function change() {
+			if (flag) {
+				document.getElementById("img").src = "pic2.jpg";
+			} else {
+				document.getElementById("img").src = "pic1.jpg";
+			}
+			flag = !flag;
+		}
+	</script>
+</body>
+</html>
