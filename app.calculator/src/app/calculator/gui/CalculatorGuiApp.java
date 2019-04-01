@@ -10,12 +10,12 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-import app.calculator.CalculatorModel;
+import app.calculator.model.CalculatorModel;
 
-public class CalculatorGUI {
+public class CalculatorGuiApp {
 
 	public static void main(String[] args) {
-		CalculatorGUI gui = new CalculatorGUI();
+		CalculatorGuiApp gui = new CalculatorGuiApp();
 		gui.createAndShowGui();
 	}
 

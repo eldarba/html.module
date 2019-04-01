@@ -1,6 +1,8 @@
-package app.calculator;
+package app.calculator.ui;
 
 import java.util.Scanner;
+
+import app.calculator.model.CalculatorModel;
 
 public class CalculatorUI {
 
@@ -59,7 +61,6 @@ public class CalculatorUI {
 				// e.printStackTrace(System.out);
 				System.out.println(e);
 			}
-
 		}
 
 		shutDown();
@@ -75,7 +76,7 @@ public class CalculatorUI {
 
 	/** display system operations */
 	private void showMenu() {
-		System.out.println("\tcalculator menu");
+		System.out.println("\n\tcalculator menu");
 		System.out.println("\tAdd ......... +");
 		System.out.println("\tSubtract .... -");
 		System.out.println("\tMultiply .... *");
@@ -83,7 +84,7 @@ public class CalculatorUI {
 		System.out.println("\tEquals ...... =");
 		System.out.println("\tReset ....... r");
 		System.out.println("\tQuit ........ q");
-		System.out.print("Enter your command choice here: ");
+		System.out.print("\nEnter your command choice here: ");
 	}
 
 }

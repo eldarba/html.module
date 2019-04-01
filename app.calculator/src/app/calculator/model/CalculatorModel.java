@@ -1,4 +1,4 @@
-package app.calculator;
+package app.calculator.model;
 
 public class CalculatorModel {
 
