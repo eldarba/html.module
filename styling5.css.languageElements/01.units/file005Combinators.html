@@ -20,6 +20,7 @@ div+p {
 }
 
 /*4. General Sibling Selector (~)*/
+/*The following example selects all <p> elements that are siblings of <hr> elements*/
 hr ~ p {
 	background-color: pink;
 }
@@ -33,20 +34,23 @@ hr ~ p {
 		have yellow background.</p>
 	<p>input elements that are nested (directly or indirectly) in a
 		form element will have red font color.</p>
-	<form action="">
-		<input value="text">
-		<div>
+	<fieldset>
+		<legend>Form</legend>
+		<form action="">
 			<input value="text">
-		</div>
-	</form>
+			<div>
+				<input value="text">
+			</div>
+		</form>
+	</fieldset>
 	<br>
 	<input value="text">
 
 	<!-- Adjacent Sibling Selector -->
-	<h3>Adjacent Sibling Selector</h3>
+	<h3>Adjacent Sibling Selector - paragraph after div</h3>
 	<p>paragraph 1</p>
 	<div>div</div>
-	<p>paragraph 2</p>
+	<p>paragraph 2 is directly after div</p>
 	<p>paragraph 3</p>
 
 	<!-- General Sibling Selector -->
