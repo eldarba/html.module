@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>File 6</title>
+</head>
+<body>
+	<h1>File 6</h1>
+	<script type="text/javascript">
+		// global scope - runs on page load
+		f1();
+		f2("Hello f2");
+		var sumOfNums = sum(3, 9);
+		alert(sumOfNums);
+		
+		function f1() {
+			alert("from f1");
+		}
+		
+		function f2(msg) {
+			alert(msg);
+		}
+		
+		function sum(x, y) {
+			var sum = x + y;
+			return sum;
+		}
+	</script>
+</body>
+</html>

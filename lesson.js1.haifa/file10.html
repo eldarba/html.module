@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>File 10</title>
+</head>
+<body>
+	<h1>File 10</h1>
+	<script>
+		// rectangle CTOR function
+		function Rectangle(length, width) {
+			this.length = length;
+			this.width = width;
+		// function should NOT be on each object
+			this.getArea = function() {
+				return this.length * this.width;
+			}
+		}
+		// function should be on the prototype
+		Rectangle.prototype.getArea = function() {
+				return this.length * this.width;
+			}
+
+		var r1 = new Rectangle(3, 5);
+		var r2 = new Rectangle(7, 4);
+		console.log(r1);
+		console.log(r1.getArea());
+		console.log(r2);
+		console.log(r2.getArea());
+
+		function Person(id, name, age) {
+			this.id = id;
+			this.name = name;
+			this.age = age;
+		}
+		// define the functions on the CTOR prototype
+		Person.prototype.sayHi = function() {
+			return "hello from " + this.name;
+		}
+
+		var p1 = new Person(101, "aaa", 35);
+		var p2 = new Person(102, "bbb", 22);
+		console.log(p1);
+		console.log(p1.sayHi());
+		console.log(p2);
+		console.log(p2.sayHi());
+	</script>
+
+</body>
+</html>

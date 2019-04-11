@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>File 7</title>
+</head>
+<body>
+	<h1>File 7</h1>
+	<script>
+		// creating an array
+		var arr = [ 2, 4, 6, 8 ];
+		console.log(arr);
+		// adding elements
+		arr.push(10);
+		console.log(arr);
+		// adding elements - other way
+		arr[arr.length] = 100;
+		console.log(arr);
+
+		var arr2 = new Array(10);
+		for (var i = 0; i < arr2.length; i++) {
+			arr2[i] = Math.floor(Math.random() * 10);
+		}
+		console.log(arr2);
+		arr2.push("bbb");
+		arr2.push("aaa");
+		arr2.sort(); // sorting the array elements
+		console.log(arr2);
+	</script>
+	
+</body>
+</html>

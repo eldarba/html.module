@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>File 9</title>
+</head>
+<body>
+	<h1>File 9</h1>
+	<script>
+		var person = {
+			id : 101,
+			name : "Dan",
+			age : 56,
+			sayHi : function() {
+				console.log("hello from " + this.name);
+			}
+		};
+
+		console.log(person);
+		person.sayHi();
+		// RECTANGLE
+		var rectangle = {
+			length : 0,
+			width : 0,
+			getArea : function() {
+				return this.length * this.width;
+			}
+		};
+		rectangle.length = 7;
+		rectangle.width = 3;
+		console.log(rectangle);
+		console.log(rectangle.getArea());
+	</script>
+
+</body>
+</html>

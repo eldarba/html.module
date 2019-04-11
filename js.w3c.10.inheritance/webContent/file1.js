@@ -14,8 +14,11 @@ function Rectangle(color, a, b) {
 	this.a = a;
 	this.b = b;
 }
+// give Rectangle a new prototype which is a duplicate of Shape.prototype (so it is not Object)
 Rectangle.prototype = Object.create(Shape.prototype);
+// define the CTOR of the Rectangle.prototype to be Rectangle (so it is not Shape)
 Rectangle.prototype.constructor = Rectangle;
+// override  methods if needed
 Rectangle.prototype.getArea = function() {
 	return this.a * this.b;
 };

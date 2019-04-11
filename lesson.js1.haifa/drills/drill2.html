@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>Drill 2</title>
+</head>
+<body>
+	<h1>Drill 2</h1>
+	<script>
+		// method invocation
+		alert("sum of numbers is: " + sum());
+
+		// method definition
+		function sum() {
+			var sum = 0;
+			var goOn = confirm("do you want to add more numbers?")
+			while (goOn) {
+				var val = Number(prompt("enter a number"));
+				sum += val;
+				goOn = confirm("do you want to add more numbers?")
+			}
+			return sum;
+		}
+	</script>
+</body>
+</html>
