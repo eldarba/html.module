@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>Drill 1</title>
+</head>
+<body>
+	<h1>Drill 1</h1>
+	<script type="text/javascript">
+		var a = prompt("enter first number");
+		var b = prompt("enter second number");
+		alert("first number is: " + a);
+		alert("second number is: " + b);
+		if (confirm("do you want to go on?")) {
+			if(a > b){
+				var temp = a;
+				a = b;
+				b = temp;
+			}
+			while(a <= b){
+				console.log(a + ", ");
+				a++;
+			}
+		} else {
+			alert("Bye!");
+		}
+	</script>
+</body>
+</html>
