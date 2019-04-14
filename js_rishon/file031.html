@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>File 31</title>
+</head>
+<body>
+	<h1>File 31</h1>
+	<a href="http://www.google.com">go to google</a>
+	<script>
+		// get the root element (<html>)
+		let rootElement = document.documentElement;
+		console.log(rootElement);
+		// get the body element
+		let bodyElement = rootElement.lastChild;
+		console.log(bodyElement);
+		// get the h1 element
+		let e_h1 = bodyElement.firstChild.nextSibling;
+		console.log("=== print the h1 element ==============================");
+		console.log(e_h1);
+		console.log(e_h1.nodeValue);
+		console.log(e_h1.innerHTML);
+		// get the text node inside h1 element
+		let e_h1_text = e_h1.firstChild;
+		console.log("=== print the h1 text node =============================");
+		console.log(e_h1_text);
+		console.log(e_h1_text.nodeValue);
+		console.log(e_h1_text.innerHTML);
+		// get the a element
+		console.log("=== print the a element =================================");
+		let e_a = e_h1.nextSibling.nextSibling;
+		console.log(e_a);
+		console.log("=== print the href attribute of the a element ===========");
+		let attr = e_a.getAttributeNode("href");
+		console.log(attr);
+		console.log(attr.name);
+		console.log(attr.value);
+	</script>
+</body>
+</html>

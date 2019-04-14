@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style type="text/css">
+div {
+	background-color: white;
+	color: red;
+	width: 200px;
+	padding: 5px;
+	font-size: 2em;
+}
+fieldset {
+	border: solid red;
+}
+</style>
+<title>File 30</title>
+</head>
+<body>
+	<h1>File 30</h1>
+	<fieldset>
+		<legend>Menu</legend>
+		<div onmouseover="over(this)" onmouseout="out(this)">Hello</div>
+		<div onmouseover="over(this)" onmouseout="out(this)">World</div>
+		<div onmouseover="over(this)" onmouseout="out(this)">How are You</div>
+	</fieldset>
+	<script>
+		function over(element) {
+			element.style.backgroundColor = "red";
+			element.style.color = "white";
+		}
+		function out(element) {
+			element.style.backgroundColor = "white";
+			element.style.color = "red";
+		}
+	</script>
+</body>
+</html>
