@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>file 2</title>
+</head>
+<body>
+	<h1>File 2</h1>
+	<script type="text/javascript">
+		// option 1	
+		var arr1 = [ 2, 4, 6 ];
+		// option 2	
+		var arr2 = new Array(3);
+		arr2[0] = 2;
+		arr2[1] = 4;
+		arr2[2] = 6;
+
+		// add elements
+		arr1[3] = 8;
+		arr2[3] = 8;
+
+		// add elements to the end of the array
+		arr1.push(10);
+		arr2.push(10);
+
+		console.log(arr1);
+		console.log(arr2);
+
+		// iterating arrays
+		for (var i = 0; i < arr1.length; i++) {
+			console.log("index " + i + ": " + arr1[i]);
+		}
+	</script>
+</body>
+</html>

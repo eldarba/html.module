@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>File 7</title>
+</head>
+<body>
+	<h1>File 7</h1>
+	<button onclick="add();">add</button>
+	<br>
+	<button onclick="remove();">remove</button>
+	<br>
+	<div id="div1"></div>
+	<script>
+		function add() {
+			var input = document.createElement("input");
+			var br = document.createElement("br");
+			var div1 = document.getElementById("div1");
+			div1.appendChild(input);
+			div1.appendChild(br);
+		}
+
+		function remove() {
+			var div1 = document.getElementById("div1");
+			// childNodes - returns a list of all children
+			div1Children = div1.childNodes;
+			// removeChild - removes a child node if found
+			div1.removeChild(div1Children[0]); // remove input
+			div1.removeChild(div1Children[0]); // remove break
+		}
+	</script>
+</body>
+</html>
