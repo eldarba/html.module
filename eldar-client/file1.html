@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>File 1</title>
+</head>
+<body>
+	<h1>AJAX 1</h1>
+	<script>
+		// create XMLHttpRequest object
+		var req = new XMLHttpRequest();
+		console.log(req);
+		// define url for request
+		var url = "http://192.168.10.150:8080/eldar-server/ServSum?val=5&val=2";
+		// open the request
+		req.open("GET", url, true);
+		console.log(req);
+		// send the request
+		req.send();
+		console.log(req);
+		// print the response
+		console.log("sum = " + req.responseText)
+	</script>
+</body>
+</html>

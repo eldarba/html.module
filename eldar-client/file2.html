@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>File 2</title>
+</head>
+<body>
+	<h1>File 2</h1>
+	<div>write here <input></div>
+	<div>first number<input id="a"></div>
+	<div>second number<input id="b"></div>
+	<div><button onclick="getSum();">Calculate Sum</button></div>
+	sum:
+	<div id="div1"></div>
+	<script>
+		var req = new XMLHttpRequest();
+		// invoked onclick
+		function getSum() {
+			req.onreadystatechange = handleResponse;
+			var a = document.getElementById("a").value;
+			var b = document.getElementById("b").value;
+			//alert(a);
+			//alert(b);
+			var url = "http://192.168.10.150:8080/eldar-server/ServSum";
+			url += "?val=" + a;
+			url += "&val=" + b;
+			//alert(url);
+			req.open("GET", url, true);
+			req.send();
+		}
+		// this function is invoked each time the readyState changes 
+		function handleResponse() {
+			if (req.readyState === 4) {
+				if (req.status === 200) {
+					document.getElementById("div1").innerHTML = req.responseText;
+				} else {
+					alert("error. status code=" + req.status);
+				}
+			}
+		}
+	</script>
+</body>
+</html>
